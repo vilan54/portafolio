@@ -1,0 +1,61 @@
+.project-card {
+  position: relative;
+  border: 1px solid var(--stroke);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-card.featured {
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgba(100, 255, 218, 0.15);
+  transform: scale(1.02);
+}
+
+.project-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text);
+}
+
+.project-title.featured {
+  color: var(--accent);
+}
+
+.project-links {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  transition: margin-top 0.2s ease-in-out;
+}
+
+.project-links.with-badge {
+  margin-top: 1.5rem;
+}
+
+.project-desc {
+  margin-top: 0.5rem;
+  color: var(--text);
+}
+
+.project-tags {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.project-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: var(--accent);
+  color: var(--neurolab);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
